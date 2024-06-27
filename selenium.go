@@ -258,11 +258,10 @@ type Actions []map[string]interface{}
 // PrintArgs specify the arguments that can
 // be sent to the Print() command.
 type PrintArgs struct {
-	Scale               float64          `json:"scale,omitempty"`
-	PageRanges          []string         `json:"pageRanges,omitempty"`
-	Orientation         PrintOrientation `json:"orientation,omitempty"`
-	PrintBackground     bool             `json:"printBackground,omitempty"`
-	DisplayHeaderFooter bool             `json:"displayHeaderFooter,omitempty"`
+	Scale           float64          `json:"scale,omitempty"`
+	PageRanges      []string         `json:"pageRanges,omitempty"`
+	Orientation     PrintOrientation `json:"orientation,omitempty"`
+	PrintBackground bool             `json:"background,omitempty"`
 }
 
 // PrintOrientation specifies the orientation for
